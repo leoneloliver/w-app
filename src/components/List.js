@@ -16,7 +16,7 @@ class List extends Component {
   }
 
   componentDidMount(){
-    axios.get('https://api.myjson.com/bins/u2nsy')
+    axios.get('https://api.myjson.com/bins/tf31e')
     .then(json => json.data.Search.map(result => (
       {
         
@@ -41,11 +41,11 @@ class List extends Component {
         <div className={styles['list']}>
 
            
-          <section className={styles['products']}>
+          <section className={styles['cards-wrap']}>
           {books.map(
             book =>
-            <div className={`${styles['product-card']} class-static`} data-urlcover={book.cover} >
-              <div className={styles['product-image']}>
+            <div className={`${styles['card']} class-static`} data-urlcover={book.cover} >
+              <div className={styles['card-image']}>
                 <img src={book.cover} />
               </div>
               <div class={styles['product-info']}>

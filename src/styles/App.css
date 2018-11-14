@@ -1,3 +1,19 @@
+.search-box{
+  background: #f89b33;
+}
+.search-item{
+        width: 300px;
+    height: 30px;
+    margin: 12px 50px 0px 15%;
+    float: right;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.search-icon{
+      position: inherit;
+    margin: 22px 35px 0px -82px;
+}
 .App {
   text-align: center;
 }
@@ -31,6 +47,50 @@
   }
 }
 
-.search-box{
-  background: #ccc;
+.list{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo{
+      width: 130px;
+    margin: 8px 50px 8px 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f78f1a;
+}
+.btn-login{
+  color: #fff;
+    background-color: #008286;
+    border-color: transparent;
+    height: 30px;
+    padding: 13px 25px 2px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.btn-login:hover{
+  background: #00696d;
 }
