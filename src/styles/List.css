@@ -1,0 +1,40 @@
+/*2019*/
+.list{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card {
+  flex: 1 16%;
+  margin: 2%;
+  padding: 2%;
+  background: #ccc;
+}
+.product-image{
+  max-width: 100px;
+  margin: 0 auto;
+}
+.product-image img {
+  max-width: 100%;
+}
+.product-info {
+  margin-top: auto;
+}
+.search-box{
+  background: #ccc;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+@media (max-width: 720px) {
+  .product-card {
+    flex: 1 40%;
+  }
+}
