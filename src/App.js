@@ -20,9 +20,9 @@ class App extends Component {
 
     function callBtn(){
         document.getElementById("myBtn").addEventListener("click", function(){
-        var element = document.getElementById("myBtn");
+        var element = document.getElementById("root");
         element.classList.toggle("active");
-        element.style.backgroundColor  = element.style.backgroundColor === 'red' ? 'blue' : 'red';
+        // element.style.backgroundColor  = element.style.backgroundColor === 'red' ? 'blue' : 'red';
       });
      }   
     setTimeout(function(){ clickable(); callBtn(); }, 900);
