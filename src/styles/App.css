@@ -1,18 +1,24 @@
+
+body{
+  background: #efefef;
+}
+
 .search-box{
   background: #f89b33;
+  box-shadow: 1px 2px 2px #9e9e9e;
 }
 .search-item{
-        width: 300px;
-    height: 30px;
-    margin: 12px 50px 0px 15%;
+    width: 300px;
+    height: 26px;
+    margin: 6px 50px 0px 15%;
     float: right;
     padding: 7px 15px;
     border-radius: 5px;
     border: 0;
 }
 .search-icon{
-      position: inherit;
-    margin: 22px 35px 0px -82px;
+    position: inherit;
+    margin: 15px 35px 0px -82px;
 }
 .App {
   text-align: center;
@@ -54,7 +60,7 @@
   flex-wrap: wrap;
 }
 .logo{
-      width: 130px;
+    height: 35px;
     margin: 8px 50px 8px 50px;
 }
 ul {
@@ -72,7 +78,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 17px 30px;
     text-decoration: none;
 }
 
@@ -80,16 +86,17 @@ li a:hover {
     background-color: #f78f1a;
 }
 .btn-login{
-  color: #fff;
+    color: #fff;
     background-color: #008286;
     border-color: transparent;
     height: 30px;
-    padding: 13px 25px 2px;
+    padding: 10px 25px 3px;
     border-radius: 7px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 12px;
+    /* margin-top: 0px; */
+    margin-top: 5px;
 }
 .btn-login:hover{
   background: #00696d;

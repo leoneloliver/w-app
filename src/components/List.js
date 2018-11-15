@@ -22,6 +22,7 @@ class List extends Component {
         
         cover: `${result.Poster}`,
         name: `${result.Title}`,
+        year: `${result.Year}`,
       
       })))
     .then(newData => this.setState({books: newData, store: newData}))
@@ -50,7 +51,7 @@ class List extends Component {
               </div>
               <div class={styles['product-info']}>
                 <h5>{book.name}</h5>
-                <h6>$99.99</h6>
+                <h6>{book.year}</h6>
               </div>          
              </div>
             )}
