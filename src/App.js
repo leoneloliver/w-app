@@ -17,7 +17,15 @@ class App extends Component {
       });
       
     }
-    setTimeout(function(){ clickable(); }, 900);
+
+    function callBtn(){
+        document.getElementById("myBtn").addEventListener("click", function(){
+        var element = document.getElementById("myBtn");
+        element.classList.toggle("active");
+        element.style.backgroundColor  = element.style.backgroundColor === 'red' ? 'blue' : 'red';
+      });
+     }   
+    setTimeout(function(){ clickable(); callBtn(); }, 900);
   }
 
   constructor(props) {

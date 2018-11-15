@@ -101,3 +101,7 @@ li a:hover {
 .btn-login:hover{
   background: #00696d;
 }
+.active {
+    color: blue;
+    background-color: red !important;
+}

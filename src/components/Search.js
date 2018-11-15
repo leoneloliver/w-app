@@ -13,8 +13,8 @@ const Search = (props) => {
 					<li><a href="">Discover</a></li>
 					<li><a href="">Create</a></li>
 	    	</ul>
-	    	<input id="myInput" type="text" className={styles['search-item']} placeholder="Search" onChange={props.searchFunc} /><div className={styles['search-icon']}>&#128269;</div>
-				<a href="" className={styles['btn-login']}>Go Premium</a>
+	    	<input id="myInput"  type="text" className={styles['search-item']} placeholder="Search" onChange={props.searchFunc} /><div className={styles['search-icon']}>&#128269;</div>
+				<a className={`${styles['btn-login']} btn`} id="myBtn">Go Premium</a>
 			</div>
     </div>
   )
