@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import List from './components/List';
+import List2 from './components/List2';
 import styles from './styles/App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -24,8 +25,26 @@ class App extends Component {
         element.classList.toggle("active");
         // element.style.backgroundColor  = element.style.backgroundColor === 'red' ? 'blue' : 'red';
       });
+     }
+
+     function toggleMenu(){
+
+        var activeLink = document.querySelectorAll('.menus');
+
+        for (var i = 0; i < activeLink.length; i++) {
+            activeLink[i].addEventListener('click', function(event) {
+              for (var j = 0; j < activeLink.length; j++) {
+                activeLink[j].classList.remove("active-menu");
+            }
+            
+             this.classList.toggle('active-menu'); 
+
+            });
+        }
+
+     
      }   
-    setTimeout(function(){ clickable(); callBtn(); }, 900);
+    setTimeout(function(){ clickable(); callBtn(); toggleMenu(); }, 900);
   }
 
   constructor(props) {
@@ -48,12 +67,13 @@ class App extends Component {
           
           <main className={styles['main']} >
 
-            <List />
-            <div className={styles['main-content']}>
-              <Route exact path="/mylist" component={List} />
+            
+            <Route exact path="/" component={List} />
+            <Route exact path="/discover" component={List2} />
+            <Route exact path="/mylist" component={List} />
               
               
-            </div>
+           
           </main>
           
         </div>
