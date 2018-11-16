@@ -19,6 +19,8 @@ body{
 .search-icon{
     position: inherit;
     margin: 15px 35px 0px -82px;
+        color: #a46214;
+    font-weight: 600;
 }
 .App {
   text-align: center;
@@ -63,18 +65,18 @@ body{
     height: 35px;
     margin: 8px 50px 8px 50px;
 }
-ul {
+ul.desktop-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+ul.desktop-menu li {
     float: left;
 }
 
-li a {
+ul.desktop-menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -82,7 +84,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+ul.desktop-menu li a:hover {
     background-color: #f78f1a;
 }
 .btn-login{
@@ -113,9 +115,10 @@ li a:hover {
   height: 100vh;
   background: #2b2b2b;
   z-index: 9;
-  margin-top: -147px;
+  margin-top: -112px;
   padding: 25px;
   margin-left: -400px;
+  width: 216px;
 }
 [class*="active"] .mobile{
   opacity: 9.9;
@@ -136,6 +139,25 @@ li a:hover {
     margin-top: 5px;
     margin-bottom: 6px;
     display: none;
+}
+.mobile a{
+  display: block;
+   
+    border-bottom: 1px solid;
+    padding: 16px 0px 14px 22px;
+    /* background: #ccc; */
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #797979;
+}
+.mobile a:hover{
+  background: #404040;
+}
+.mobile ul{
+  list-style: none;
+    padding: 0;
+    margin: 0;
 }
 @media only screen and (max-width:1144px) {
     .search-item{
@@ -237,12 +259,47 @@ li a:hover {
 }
   
 }
-@media only screen and (max-width:494px) {
- 
+@media only screen and (max-width:555px) {
+  .search-icon{
+        margin: 15px 20px 0px -68px;
+  }
   .search-item{
-    width: 28%;
+    width: 65%;
+    margin: 6px 35px 0px 26px;
+  
+  }
+  .logo-container{
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width:555px) {
+  
+  .search-item{
+    width: 62%;
    
   
-}
+  }
+  
   
 }
+@media only screen and (max-width:412px) {
+  
+  .search-item{
+    width: 59%;
+   
+  
+  }
+}
+@media only screen and (max-width:380px) {
+  
+  .search-item{
+    width: 56%;
+   
+  
+  }
+}
+
+  

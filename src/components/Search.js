@@ -8,8 +8,10 @@ const Search = (props) => {
   return(
     <div className={styles['search-box']}>
 	    <div className={styles['list']}>
-	    	<img src={logo} className={styles['logo']}/>
-	    	<ul>
+	    	<div className={styles['logo-container']}>
+	    		<img src={logo} className={styles['logo']}/>
+	    	</div>
+	    	<ul className={styles['desktop-menu']}>
 					<li><a href="">Discover</a></li>
 					<li><a href="">Create</a></li>
 	    	</ul>
@@ -17,7 +19,12 @@ const Search = (props) => {
 				<a className={`${styles['btn-login']} btn`}>Go Premium</a>
 				<a className={styles['btn-mobile']} id="myBtn">☰</a>
 			</div>
-			<div className={styles['mobile']}>sdafsdfdsafsdf sda f ds f s d f sdf</div>
+			<div className={styles['mobile']}>
+					<ul>
+						<li><a href="">Discover</a></li>
+						<li><a href="">Create</a></li>
+	    	</ul>
+			</div>
     </div>
   )
 }
