@@ -5,7 +5,18 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 
+
 const Search = (props) => {
+
+
+    
+	let items = [
+    { name: "Discover", path: "/discover" },
+    { name: "My List", path: "/" }
+    
+  ];
+
+
   return(
     <div className={styles['search-box']}>
 	    <div className={styles['list']}>
@@ -38,10 +49,16 @@ const Search = (props) => {
 				
 			
 			<div className={styles['mobile']}>
+
 				<ul>
-						<li><a href="/discover">Discover</a></li>
-						<li><a href="/mylist">My List</a></li>
+					{items.map(item => (
+            <li>
+              <a href={item.path}>{item.name}</a>
+            </li>
+          ))}
+				
 	    	</ul>
+
 			</div>
 
 			</div>
