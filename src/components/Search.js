@@ -3,19 +3,13 @@ import styles from '../styles/App.css';
 import logo from '../images/logo.png';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
-
-
 const Search = (props) => {
-
-
     
 	let items = [
     { name: "Discover", path: "/discover" },
     { name: "My List", path: "/" }
     
   ];
-
 
   return(
     <div className={styles['search-box']}>
@@ -35,31 +29,31 @@ const Search = (props) => {
 		    	</ul>
 	    	</div>
 	    	<div className={styles['columns']}>
-						<input id="myInput"  type="text" className={styles['search-item']} placeholder="Search" onChange={props.searchFunc} /><div className={styles['search-icon']}>&#128269;</div>
+						<input id="myInput" type="text" className={styles['search-item']} placeholder="Search" onChange={props.searchFunc} /><div className={styles['search-icon']}>&#128269;</div>
 				
 	    	</div>
 
 				<div className={styles['columns']}>
 						<div className={`${styles['btn-login']} btn`}>
-							<a>Go Premium</a>
+							<a><span className={styles['only-desktop']}>Go </span>Premium</a>
 						</div>
 		
 						<a className={styles['btn-mobile']} id="myBtn">☰</a>
 				</div>
 				
 			
-			<div className={styles['mobile']}>
+			</div>
+
+			<div className={styles['mobile-x']}>
 
 				<ul>
 					{items.map(item => (
             <li>
-              <a href={item.path}>{item.name}</a>
+              <Link to={item.path}>{item.name}</Link>
             </li>
           ))}
 				
 	    	</ul>
-
-			</div>
 
 			</div>
     </div>
