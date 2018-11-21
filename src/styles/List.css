@@ -47,17 +47,40 @@
   -ms-transition: all .2s ease;
   transition: all .2s ease;
 }
+.card:hover .product-info{
+  margin-top: -180px;
+  height: 180px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+
+}
+.card:hover .product-info h5{
+  margin-top: 36px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
 
 
 .card h5{
-    padding: 0;
-    margin-top: 12px;
-    margin-bottom: 0;
-    font-size: 1em;
-    /*color: #4e4e4e;*/
-    font-weight: 400;
-    font-size: 1.1em;
-    color: #d85c45;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 1em;
+  /*color: #4e4e4e;*/
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #d85c45;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
 }
 .card h6{
     margin: 0;
@@ -88,6 +111,11 @@
   text-align: center;
   background-color: #180707cf;
   background-image: linear-gradient( #302d2d00, #000 );
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
 }
 @media only screen and (max-width:1142px) {
    .card {
