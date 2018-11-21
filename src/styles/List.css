@@ -32,16 +32,11 @@
 }
 
 .card {
-  background: #fff;
-  border-radius: 2px;
+  background: #000;
   display: inline-block;
   height: auto;
-  margin: 15px;
   position: relative;
-  padding: 2%;
-  width: 18%;
-  /* box-shadow: 0 -1px 3px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.13); */
-  box-shadow: 0 0px 3px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.1);
+  width: 20%;
   text-align: left;
   cursor: pointer;
   -webkit-transition: all .2s ease;
@@ -51,14 +46,6 @@
   transition: all .2s ease;
 }
 
-.card:hover {
-  box-shadow: 0 7px 15px rgba(0,0,0,0.1), 0 6px 10px rgba(0,0,0,0.1);
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  transition: all .4s ease;
-}
 
 .card h5{
     padding: 0;
@@ -87,26 +74,33 @@
   width: 60%;
   margin: 12px auto;
 }
+.product-info{
+  margin-top: -100px;
+  /* background: #000000ab !important; */
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 100%;
+  /* padding: 4px; */
+  text-align: center;
+  background-color: #180707cf;
+  background-image: linear-gradient( #302d2d00, #000 );
+}
 @media only screen and (max-width:1142px) {
    .card {
   
-    width: 17%;
+    width: 20%;
   
   }
 }
-@media (max-width: 920px) {
-  .card {
-  
-    width: 24%;
-  
-  }
-}
+
 
 @media (max-width: 720px) {
 
   .card {
   
-    width: 38%;
+    width: 50%;
   
   }
   
@@ -115,7 +109,7 @@
   
   .card {
   
-    width: 92%;
+    width: 100%;
   
   }
 }
