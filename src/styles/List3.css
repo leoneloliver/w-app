@@ -96,6 +96,7 @@
 }
 .flexcontainer img{
   width: 150px;
+  box-shadow: 1px 3px 8px #857f7f;
 }
 div.columns{
   margin: 0 auto;
@@ -132,6 +133,7 @@ div.columns div:nth-of-type(2){
   font-weight: 100;
   color: #d85c45;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .product-info-list h6{
   font-size: 1em;
