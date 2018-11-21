@@ -7,7 +7,7 @@ const Search = (props) => {
     
 	let items = [
     { name: "Discover", path: "/discover" },
-    { name: "My List", path: "/" }
+    { name: "My List", path: "/mylist" }
     
   ];
 
