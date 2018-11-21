@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import List from './components/List';
 import List2 from './components/List2';
 import List3 from './components/List3';
+import Footer from './components/Footer';
 import styles from './styles/App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -76,6 +77,7 @@ class App extends Component {
               
            
           </main>
+          <Footer />
           
         </div>
       </Router>

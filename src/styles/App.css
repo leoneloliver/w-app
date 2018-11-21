@@ -230,7 +230,16 @@ ul.desktop-menu li a:hover {
     /*border-bottom: 3px solid #d47001;
     background: #dc9209;*/
 }
-
+footer{
+  background: #ff500a;
+}
+footer p{
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
 @media only screen and (max-width:1136px) {
    div.columns:nth-of-type(2), .search-icon, .list ul{
     display: none;
