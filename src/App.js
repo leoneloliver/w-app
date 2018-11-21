@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import List from './components/List';
 import List2 from './components/List2';
+import List3 from './components/List3';
 import styles from './styles/App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -70,7 +71,7 @@ class App extends Component {
             
             <Route exact path="/" component={List} />
             <Route exact path="/discover" component={List2} />
-            <Route exact path="/mylist" component={List} />
+            <Route exact path="/mylist" component={List3} />
               
               
            

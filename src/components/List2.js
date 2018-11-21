@@ -42,7 +42,7 @@ class List extends Component {
         <div className={styles['list']}>
 
           <div className={styles['cards-wrap']}>
-              <h2>Discover</h2>
+              <h2 className={styles['page-title']}>Discover</h2>
           </div>
            
           <section className={styles['cards-wrap']}>
