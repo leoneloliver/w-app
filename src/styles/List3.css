@@ -34,19 +34,19 @@
 }
 
 .card {
-    background: #fff;
-    border-radius: 2px;
-    display: inline-block;
-    height: auto;
-    margin: 15px;
-    position: relative;
-    padding: 2%;
-    width: 18%;
-    /* box-shadow: 0 -1px 3px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.13); */
-    box-shadow: 0 0px 3px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.1);
-    text-align: left;
-    cursor: pointer;
-    -webkit-transition: all .2s ease;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: auto;
+  margin: 15px;
+  position: relative;
+  padding: 2%;
+  width: 18%;
+  /* box-shadow: 0 -1px 3px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.13); */
+  box-shadow: 0 0px 3px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -o-transition: all .2s ease;
   -ms-transition: all .2s ease;
@@ -136,6 +136,7 @@ div.columns div:nth-of-type(2){
   color: #d85c45;
   margin-bottom: 0;
   margin-top: 0;
+  font-weight: 400;
 }
 .product-info-list h6{
   font-size: 1em;
@@ -149,7 +150,7 @@ div.columns div:nth-of-type(2){
   padding: 15px 0px !important;
   color: #777575;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 @media only screen and (max-width:1142px) {
