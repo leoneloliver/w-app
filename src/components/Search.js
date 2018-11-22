@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 const Search = (props) => {
     
 	let items = [
-    { name: "Discover", path: "/discover" },
-    { name: "My List", path: "/mylist" }    
-  ];
+		{ name: "Discover", path: "/discover" },
+		{ name: "My List", path: "/mylist" }    
+	];
 
-  return(
+	return(
 		<div className={styles['search-box']}>
 			<div className={styles['list']}>
 				<div className={`${styles['logo-container']} ${styles['columns']}`}>
@@ -46,6 +46,6 @@ const Search = (props) => {
 				</ul>
 			</div>
 		</div>
-  )
+	)
 }
 export default Search
