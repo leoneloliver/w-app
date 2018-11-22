@@ -22,10 +22,10 @@ body{
 }
 .search-icon{
   position: absolute;
-  margin: 13px 0 0 -52px;
+  margin: 15px 0 0 -52px;
   /*color: #a46214;*/
   color: #d85c45;
-  font-weight: 600;
+  font-weight: 100;
 }
 .App {
   text-align: center;
