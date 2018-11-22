@@ -7,16 +7,14 @@ const Search = (props) => {
     
 	let items = [
     { name: "Discover", path: "/discover" },
-    { name: "My List", path: "/mylist" }
-    
+    { name: "My List", path: "/mylist" }    
   ];
 
   return(
     <div className={styles['search-box']}>
 	    <div className={styles['list']}>
 	    	<div className={`${styles['logo-container']} ${styles['columns']}`}>
-	    	<Link to="/"><img src={logo} className={styles['logo']}/></Link>
-	    		
+	    	<Link to="/"><img src={logo} className={styles['logo']}/></Link>   		
 	    	</div>
 	    	<div className={styles['columns']}>
 					<ul className={styles['desktop-menu']}>
@@ -29,35 +27,25 @@ const Search = (props) => {
 		    	</ul>
 	    	</div>
 	    	<div className={styles['columns']}>
-						<input id="myInput" type="text" className={styles['search-item']} placeholder="Search" onChange={props.searchFunc} /><div className={styles['search-icon']}>&#128269;</div>
-				
+						<input id="myInput" type="text" className={styles['search-item']} placeholder="Search" onChange={props.searchFunc} /><div className={styles['search-icon']}>&#128269;</div>				
 	    	</div>
-
 				<div className={styles['columns']}>
 						<div className={`${styles['btn-login']} btn`}>
 							<a><span className={styles['only-desktop']}>Go </span>Premium</a>
-						</div>
-		
+						</div>	
 						<a className={styles['btn-mobile']} id="myBtn">☰</a>
-				</div>
-				
-			
+				</div>		
 			</div>
-
 			<div className={styles['mobile-x']}>
-
 				<ul>
 					{items.map(item => (
             <li>
               <Link to={item.path}>{item.name}</Link>
             </li>
-          ))}
-				
+          ))}				
 	    	</ul>
-
 			</div>
     </div>
   )
 }
-
 export default Search
